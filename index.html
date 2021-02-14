@@ -4,11 +4,38 @@
 <head>
 
 <style type="text/css">
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+:root {
+    --primary-color: beige;    
+}
+[data-theme="dark-mode"] {
+    --primary-color: grey;    
+}
 body {
-  background-image: url('https://thumbs.gfycat.com/ChubbyNiceCommabutterfly-max-1mb.gif');
+  background-image: url('https://wallpapercave.com/wp/wp4712326.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  transition: background 2s;
 }
 .second {
     padding: 9px;
@@ -38,7 +65,9 @@ body {
   opacity: 0;
   transition: opacity 0.3s;
 }
-
+.dark-mode {
+  background-image: url('https://wallpapercave.com/wp/wp2394254.jpg');
+}
 .tooltip .tooltiptext::after {
   content: "";
   position: absolute;
@@ -68,6 +97,87 @@ body {
     min-height: 1px;
     padding: 1.25rem;
 }
+.bg-custom[data-v-49d9514b] {
+    --bg-opacity: 1;
+    background-color: rgba(74,29,150,var(--bg-opacity));
+}
+
+.tab { 
+       display:inline-block; 
+       margin-left: 40px; 
+}
+.bg-morenotdark {
+    --bg-opacity: 1;
+    background-color: #1a1a21;
+    background-color: rgba(26,26,33,var(--bg-opacity));
+}
+.rounded-b-lg {
+    border-bottom-right-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+}
+.bg-indigo-900 {
+    --bg-opacity: 1;
+    background-color: #362f78;
+    background-color: rgba(54,47,120,var(--bg-opacity));
+}
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+a {
+    background-color: transparent;
+}
+*, :after, :before {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #d2d6dc;
+}
+user agent stylesheet
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.text-xs {
+    --text-opacity: 1;
+    color: #fff;
+    color: rgba(255,255,255,var(--text-opacity));
+}
+.text-2xl {
+    font-size: 1.5rem;
+}
+.font-bold {
+    font-weight: 700;
+}
+.text-lg {
+    font-size: 1.125rem;
+}
+.font-medium {
+    font-weight: 500;
+}
+.btn-inv {
+  color:transparent;
+  background:transparent;
+
+}
+.page    { display: none; padding: 0 0.5em; }
+.page h1 { font-size: 2em; line-height: 1em; margin-top: 1.1em; font-weight: bold; }
+.page p  { font-size: 1.5em; line-height: 1.275em; margin-top: 0.15em; }
+
+#loading {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  background-image: url("https://media.discordapp.net/attachments/669177728125108224/810298511219490826/784081621845409792-1.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+}
 </style>
 
   <meta charset="utf-8" />
@@ -79,7 +189,7 @@ body {
   </title>
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <link href="https://pro.fontawesome.com/releases/v5.13.1/css/all.css" rel="stylesheet">
   <!-- Nucleo Icons -->
   <link href="./assets/css/nucleo-icons.css" rel="stylesheet" />
   <link href="./assets/css/nucleo-svg.css" rel="stylesheet" />
@@ -96,49 +206,78 @@ body {
 </head>
 
 <body class="index-page">
-<div class="container shape-container d-flex align-items-center py-lg">
+
+<div id="loading"></div>
+<div class="container page shape-container d-flex align-items-center py-lg">
           <div class="col px-0">
             <div class="row align-items-center justify-content-center">
               <div class="col-lg-6 text-center">
                 <div class="mt-5">
-                   <div class="p-3 mb-2 bg-dark text-white rounded">
-				   
-						<img src="https://yt3.ggpht.com/ytc/AAUvwngF8r0nQ4T2wRIhu7mzV3N5360VY7oinjcatiLq3A=s800-c-k-c0x00ffffff-no-rj" alt="Circle image" class="img-fluid rounded-circle shadow" title="Kaizaru" style="width: 150px;">
+                   <div data-v-49d9514b="" class="bg-custom text-white rounded">
+				   <p> <span class="tab"> </span></p>
+						<img src="https://cdn.discordapp.com/avatars/732838814070079529/99968dd62dde259b9f648ae6664ad48a?size=2048" alt="Circle image" class="img-fluid rounded-circle shadow" title="Kaizaru" style="width: 150px;">
 						<h2 class="text-white">Kaizaru <img src="https://cdn.discordapp.com/attachments/591157769181069332/752622240486522943/check.png" height="32" width="32" title="Verified"></h2>
 				<div class="card-body second">
-					<h3 class="text-white">
-						Social Media
-					</h3>
-					<a href="https://www.youtube.com/kaizaru">
-						<img src="https://cdn.discordapp.com/attachments/591157769181069332/752117422483308544/youtube.png" alt="youtube icon" class="social youtube" height="40" width="40">
-					</a>
-					<a href="https://kaizarudev.my.id">
-						<img src="https://www.freepnglogos.com/uploads/logo-website-png/logo-website-website-logo-png-transparent-background-background-15.png" alt="website icon" class="social website" height="40" width="40">
-					</a>
-					<a href="https://github.com/kaizaru">
-						<img src="https://discordapp.com/assets/5d69e29f0d71aaa04ed9725100199b4e.png" alt="github icon" class="social youtube" height="40" width="40">
-					</a>
-					<a href="https://twitter.com/kaizaru">
-						<img src="https://discordapp.com/assets/4662875160dc4c56954003ebda995414.png" alt="twitter icon" class="social youtube" height="40" width="40">
-					</a>
-					<a href="https://instagram.com/notkaizaru">
-						<img src="https://www.freepnglogos.com/uploads/instagram-logo-png-transparent-0.png" alt="instagram icon" class="social youtube" height="40" width="40">
-					</a>
+					<img src="https://discord.com/assets/28174a34e77bb5e5310ced9f95cb480b.png" style="width: 50px;">
+					<span data-v-49d9514b="" onclick="copy(this)" class="text-white font-bold text-2xl">カイザル</span><span data-v-49d9514b="" onclick="copy(this)" class="text-gray-400 font-medium text-lg">#0288</span>
+					<span data-v-49d9514b="" class="px-1 badge"><!----><!----><!----><!----><img content="HypeSquad Bravery" src="https://discord.bio/img/hs_bravery.1115767a.svg" class="w-5 outline-none" tabindex="0"><!----><!----><!----><!----><!----><!----><!----></span>
 				</div>
 			   	<div> </div>
-				<div class="card-body third">
-					<iframe style="height:80px;width:300px;border:none;" frameborder="0" src="https://counts.live/embeds/youtube-subscriber-count/UCch0R1O7pSWFxm-N0jxulOg/small" />
-				</div>
-			   	<div class="card-body third">
-				    <img src="https://discord.c99.nl/widget/theme-3/732838814070079529.png">
-				</div>
-						
+				<div class="card-body bg-morenotdark rounded-b-lg">
+				<a data-v-49d9514b="" href="https://blizzard.com/" target="_blank"><div data-v-49d9514b="" class="bg-indigo-900 hover:bg-indigo-800 rounded-lg px-3 py-2 m-2 text-xs shadow-lg"><span data-v-49d9514b=""><span data-v-49d9514b="" class="BaseIcon mr-2 fab fa-battle-net"></span>CuekGaming#1663</span></div></a><a data-v-49d9514b="" href="https://facebook.com/" target="_blank"><div data-v-49d9514b="" class="bg-indigo-900 hover:bg-indigo-800 rounded-lg px-3 py-2 m-2 text-xs shadow-lg"><span data-v-49d9514b=""><span data-v-49d9514b="" class="BaseIcon mr-2 fab fa-facebook"></span>Chuek</span></div></a><a data-v-49d9514b="" href="https://github.com/CuekGaming" target="_blank"><div data-v-49d9514b="" class="bg-indigo-900 hover:bg-indigo-800 rounded-lg px-3 py-2 m-2 text-xs shadow-lg"><span data-v-49d9514b=""><span data-v-49d9514b="" class="BaseIcon mr-2 fab fa-github"></span>CuekGaming</span></div></a><a data-v-49d9514b="" href="https://reddit.com/u/CuekGaming/" target="_blank"><div data-v-49d9514b="" class="bg-indigo-900 hover:bg-indigo-800 rounded-lg px-3 py-2 m-2 text-xs shadow-lg"><span data-v-49d9514b=""><span data-v-49d9514b="" class="BaseIcon mr-2 fab fa-reddit"></span>CuekGaming</span></div></a><a data-v-49d9514b="" href="https://open.spotify.com/user/63b1ek4t8gu6qkzednmst1zue/" target="_blank"><div data-v-49d9514b="" class="bg-indigo-900 hover:bg-indigo-800 rounded-lg px-3 py-2 m-2 text-xs shadow-lg"><span data-v-49d9514b=""><span data-v-49d9514b="" class="BaseIcon mr-2 fab fa-spotify"></span>CuekGaming</span></div></a><a data-v-49d9514b="" href="https://steamcommunity.com/profiles/76561199138398291/" target="_blank"><div data-v-49d9514b="" class="bg-indigo-900 hover:bg-indigo-800 rounded-lg px-3 py-2 m-2 text-xs shadow-lg"><span data-v-49d9514b=""><span data-v-49d9514b="" class="BaseIcon mr-2 fab fa-steam"></span>ConeTall</span></div></a><a data-v-49d9514b="" href="https://twitch.tv/kaizaruplays/" target="_blank"><div data-v-49d9514b="" class="bg-indigo-900 hover:bg-indigo-800 rounded-lg px-3 py-2 m-2 text-xs shadow-lg"><span data-v-49d9514b=""><span data-v-49d9514b="" class="BaseIcon mr-2 fab fa-twitch"></span>kaizaruplays</span></div></a><a data-v-49d9514b="" href="https://twitter.com/CuekGaming2/" target="_blank"><div data-v-49d9514b="" class="bg-indigo-900 hover:bg-indigo-800 rounded-lg px-3 py-2 m-2 text-xs shadow-lg"><span data-v-49d9514b=""><span data-v-49d9514b="" class="BaseIcon mr-2 fab fa-twitter"></span>CuekGaming2</span></div></a><a data-v-49d9514b="" href="https://xbox.com/" target="_blank"><div data-v-49d9514b="" class="bg-indigo-900 hover:bg-indigo-800 rounded-lg px-3 py-2 m-2 text-xs shadow-lg"><span data-v-49d9514b=""><span data-v-49d9514b="" class="BaseIcon mr-2 fab fa-xbox"></span>Kaizaru</span></div></a><a data-v-49d9514b="" href="https://youtube.com/channel/UCch0R1O7pSWFxm-N0jxulOg/" target="_blank"><div data-v-49d9514b="" class="bg-indigo-900 hover:bg-indigo-800 rounded-lg px-3 py-2 m-2 text-xs shadow-lg"><span data-v-49d9514b=""><span data-v-49d9514b="" class="BaseIcon mr-2 fab fa-youtube"></span>Kaizaru Ch. - カイザル -</span></div></a><a data-v-49d9514b="" href="https://instagram.com/notkaizaru/" target="_blank"><div data-v-49d9514b="" class="bg-indigo-900 hover:bg-indigo-800 rounded-lg px-3 py-2 m-2 text-xs shadow-lg"><span data-v-49d9514b=""><span data-v-49d9514b="" class="BaseIcon mr-2 fab fa-instagram"></span> @notkaizaru </span></div></a>
+			</div>
 				</div>
 				
                 </div>
               </div>
             </div>
           </div>
-        </div>
+       
+	   </div>
+<button class="btn-inv" onclick="myFunction()">Toggle Wallpaper</button>
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+<script>
+function copy(that){
+var inp =document.createElement('input');
+document.body.appendChild(inp)
+inp.value =that.textContent
+inp.select();
+document.execCommand('copy',false);
+inp.remove();
+}
+</script>
+<script>
+function onReady(callback) {
+  var intervalId = window.setInterval(function() {
+    if (document.getElementsByTagName('body')[0] !== undefined) {
+      window.clearInterval(intervalId);
+      callback.call(this);
+    }
+  }, 5000);
+}
+
+function setVisible(selector, visible) {
+  document.querySelector(selector).style.display = visible ? 'block' : 'none';
+}
+
+onReady(function() {
+  setVisible('.page', true);
+  setVisible('#loading', false);
+});
+</script>
+<script>
+const rootDataset = document.documentElement.dataset;
+
+document.onclick = () => {
+    const inDarkMode = (rootDataset.theme === 'dark-mode');
+    rootDataset.theme = inDarkMode ? '' : 'dark-mode';
+}
+</script>
 </body>
 </html>
